@@ -9,7 +9,7 @@ describe Ocr do
 
 			f = File.expand_path('../sampleOcr/one-to-nine.txt',__FILE__)
 
-			subject.readFile(f).should == [[1, 2, 3, 4, 5, 6, 7, 8, 9], [1, 2, 3, 4, 5, 6, 7, 8, 9]]
+			subject.readFile(f).should == ["12345?789 ILL", "123456789", "664371495 ERR"]
 		end
 	end
 end
